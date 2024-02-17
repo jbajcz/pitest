@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-double pi(long long int n) {
+double pi(int n) {
     double sum = 0.0;
     int sign = 1;
     for (int i = 0; i < n; ++i) {           
@@ -12,8 +12,6 @@ double pi(long long int n) {
 }
 
 int main() {
-    int n = 1000000;;
-    for (int i = 0; i < 3; i++) {
-        cout << "pi is " << pi(n) << endl;
-    }
+    int n = 10000000000;
+    cout << "pi is " << pi(n) << endl;
 }
